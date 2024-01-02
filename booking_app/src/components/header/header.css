@@ -1,0 +1,141 @@
+.header{
+    background-color: darkslategray;
+    color: burlywood;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-weight: 500;
+    background-image: url("./Bamboo.jpg");
+    background-position: 0% 10%;
+}
+
+.headerContainer{
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+}
+
+.headerContainer.listMode{
+    margin: 20px 0px 0px 0px;
+}
+
+.headerList{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+.headerListItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row-reverse;
+}
+
+.headerListItem.active{
+    border: 1px solid burlywood;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.headerBtn{
+    margin-left: 20px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: burlywood;
+    color: darkslategray;
+    font-weight: 500;
+}
+
+.headerSearch{
+    height: 30px;
+    background-color: burlywood;
+    border: 3px solid darkolivegreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -15px;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.searchBtn{
+    margin-left: 20px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: darkslategray;
+    color: burlywood;
+}
+
+.headerIcon{
+    color: darkslategray;
+}
+
+.headerSearchItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerSearchInput{
+    border: none;
+    outline: none;
+    background-color: burlywood;
+    color: darkslategray;
+}
+
+.headerSearchText{
+    color: darkslategray;
+    cursor: pointer;
+}
+
+.date{
+    position: absolute;
+    top: 53px;
+    z-index: 2;
+}
+
+.options{
+    position: absolute;
+    top: 50px;
+    background-color: darkslategray;
+    color: burlywood;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px -5px rgb(60, 102, 102);
+    z-index: 2;
+}
+
+.optionItem{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.optionCounter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: burlywood;
+}
+
+.optionCounterButton{
+    width: 30px;
+    height: 30px;
+    border: 1px solid darkslategray;
+    color: darkslategray;
+    cursor: pointer;
+    background-color: burlywood;
+
+}
+
+.optionCounterButton:disabled{
+    cursor: not-allowed;
+}
+

@@ -1,0 +1,21 @@
+.homeContainer{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: darkslategray;
+}
+
+.homeTitle{
+    width: 1024px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: darkslategray;
+}
+
+.homeMail{
+    margin-top: 50px;
+}
+

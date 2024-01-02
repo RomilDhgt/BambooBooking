@@ -1,0 +1,129 @@
+.searchItem{
+    border: 1px solid darkslategray;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: burlywood;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.sDesc{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 2;
+}
+
+.sTitle{
+    font-size: 20px;
+    color: darkslategray;
+    margin-bottom: 0px;
+}
+
+.sDist{
+    font-size: 12px;
+    color: darkslategray;
+}
+
+.sImg{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.sPerk{
+    font-size: 12px;
+    background-color: darkslategray;
+    color: burlywood;
+    width: fit-content;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.subTitles{
+    font-size: 12px;
+    font-weight: bold;
+    color: darkslategray;
+}
+
+.sFeatures{
+    font-size: 12px;
+    color: darkslategray;
+
+}
+
+.cancellation{
+    font-size: 12px;
+    color: darkslategray;
+}
+
+.sDetails{
+    flex: 1;
+    color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sRating{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sRating>span{
+    font-weight: 500;
+}
+
+.sRating>button{
+    background-color: darkslategray;
+    color: burlywood;
+    padding: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.featReview{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.fTitle{
+    font-size: 16px;
+}
+
+.fReview{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.sDeets{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sPrice{
+    font-size: 24px;
+}
+
+.priceDeets{
+    font-size: 10px;
+}
+
+.sAvail{
+    background-color: darkslategray;
+    color: burlywood;
+    padding: 3px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}

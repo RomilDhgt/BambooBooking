@@ -1,0 +1,209 @@
+.listContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    background-image: url(../home/Bamboo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+  
+.listWrapper {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    gap: 20px;
+}
+
+.optns{
+    color: burlywood;
+}
+  
+.listSearch {
+    flex: 1;
+    background-color: darkslategray;
+    padding: 10px;
+    border-radius: 10px;
+    position: sticky;
+    height: max-content;
+    top: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
+.listTitle{
+    font-size: 20px;
+    color: burlywood;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+  
+.lItem{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+  
+.lItem>label{
+    font-size: 16px;
+    color: burlywood;
+}
+  
+.lItem>input{
+    height: 30px;
+    border: none;
+    padding: 5px;
+}
+
+.lItem>span{
+    height: 30px;
+    padding: 5px;
+    color: burlywood;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+  
+.lOptions{
+    padding: 10px;
+}
+  
+.optionItem{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: burlywood;
+    font-size: 12px;
+}
+  
+.opsearch{
+    width: 50px;
+}
+  
+.listSearch>button{
+    padding: 10px;
+    background-color: burlywood;
+    color: darkslategray;
+    border: none;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+}
+  
+.listResult {
+flex: 3;
+}
+
+/*
+.listContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.listWrapper{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    gap: 20px;
+}
+
+.listSearch{
+    
+    flex: 1;
+    background-color: darkslategray;
+    padding: 10px;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+    height: max-content;
+    
+}
+
+.listTitle{
+    font-size: 30px;
+    color: burlywood;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.listResult{
+    flex:3;
+}
+
+.optns{  
+    color: burlywood;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.lItem{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+.lItem>label{
+    font-size: 16px;
+    color: burlywood;
+    font-weight: 400;
+}
+
+.lItem>input{
+    height: 15px;
+    border: none;
+    padding: 5px;
+    background-color: burlywood;
+    margin: 5px;
+}
+
+.lItem>span{
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: burlywood;
+}
+
+.optionItem{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: burlywood;
+    font-size: 12px;
+}
+
+.opsearch::placeholder{
+    color: darkslategray;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.opsearch{
+    color: darkslategray;
+    background-color: burlywood;
+    border: none;
+    height: 15px;
+    padding: 5px;
+}
+
+.searchButton{
+    padding: 10px;
+    background-color: burlywood;
+    color: darkslategray;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+}
+
+.lOptions{
+    width: 50px;
+    padding: 10px;
+}
+*/
