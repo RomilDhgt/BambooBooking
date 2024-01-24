@@ -1,7 +1,10 @@
-import User from "../models/User.js"
+import User from "../models/User.js" 
+import bcrypt from "bcryptjs"
 
 export const updateUser = async (req,res,next)=>{
     try {
+        var salt = bcrypt.genSaltSync(10);
+        req.body.password = bcrypt.hashSync(req.body.password, salt);
         const updateUser = await User.findByIdAndUpdate(
             req.params.id, 
             { $set: req.body},

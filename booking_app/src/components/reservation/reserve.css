@@ -1,0 +1,80 @@
+.reserve{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.418);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darkslategray;
+}
+
+.reserveContainer{
+    background-color: burlywood;
+    padding: 20px;
+    position: relative;
+}
+
+.close{
+    color: darkslategray;
+    position: absolute;
+    top: 1;
+    right: 1;
+    cursor: pointer;
+}
+
+.ritem{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.rInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rTitle{
+    font-weight: 500;
+}
+
+.rDesc{
+    font-weight: 300;
+}
+
+.maxPpl{
+    font-size: 12px;
+}
+
+.rPrice{
+    font-weight: 500;
+}
+
+.selRm{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 8px;
+    color: gray;
+}
+
+.room{
+    display: flex;
+    flex-direction: column;
+}
+
+.reserveButton{
+    border: none;
+    padding: 10px 20px;
+    background-color: darkslategray;
+    color: burlywood;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+}

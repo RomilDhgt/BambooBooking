@@ -1,0 +1,85 @@
+.aUser{
+    background-image: linear-gradient(to bottom right, darkgreen, darkslategray);
+    height:100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.adminColumn{
+    gap: 10px;
+    background-color: burlywood;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.hotel{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: burlywood;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.userTable{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid;
+}
+
+.heading{
+    padding: 10px;
+    border: 1px solid;
+}
+
+.body{
+    padding: 10px;
+    border: 1px solid;
+}
+
+.row>th,td{
+    padding: 10px;
+    border: 1px solid;
+}
+
+.addUser{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.418);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darkslategray;
+}
+
+.addContainer{
+    background-color: burlywood;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.close{
+    color: darkslategray;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.registerButton{
+    margin-top: 15px;
+}

@@ -3,8 +3,9 @@ import { createError } from "./error.js"
 
 export const verifyToken = (req, res, next) => {
     const token = req.cookies.access_token;
+    console.log(browser)
     if(!token){
-        return next(createError(401, "Not authenticated"))
+        return next(createError(401, "Not authenticated", token))
     }
     jwt.verify(token, process.env.JWT, (err, user) =>{
         if(err){
@@ -26,6 +27,7 @@ export const verifyUser = (req,res,next) =>{
 }
 
 export const verifyAdmin = (req,res,next) =>{
+    console.log(req.user)
     verifyToken(req,res,next, ()=>{
         if(req.user.isAdmin){     
             next()

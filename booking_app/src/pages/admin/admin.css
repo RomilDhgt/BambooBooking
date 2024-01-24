@@ -1,0 +1,46 @@
+.admin{
+    background-image: linear-gradient(to bottom right, darkgreen, darkslategray);
+    width: 100%;
+}
+
+.adminWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.adminImg{
+    height: 100vh;
+}
+
+.adminColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: burlywood;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+.query{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.adminButton{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: darkslategray;
+    color: burlywood;
+    border: none;
+    border-radius: 3px;
+    font-size: large;
+    padding: 5px;
+    width: 100px;
+    cursor: pointer;
+}

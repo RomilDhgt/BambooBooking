@@ -20,7 +20,6 @@ const Home = ()=>{
                 <FeaturedHomes/>
             </div>
             <div className="homeMail"><MailList/></div>
-            
             <Footer/>
         </div>
     )

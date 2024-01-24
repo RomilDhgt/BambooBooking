@@ -8,6 +8,8 @@ import { format } from "date-fns";
 import SearchItem from '../../components/searchItem/SearchItem'
 import Footer from '../../components/footer/Footer'
 import MailList from '../../components/mailList/MailList'
+import useFetch from "../../hooks/useFetch"
+import reFetch from "../../hooks/useFetch"
 
 const List = ()=>{
 
@@ -16,8 +18,15 @@ const List = ()=>{
     const [date,setDate] = useState(location.state.date)
     const [options, setOptions] = useState(location.state.options)
     const [openDate, setOpenDate] = useState(false)
+    const [min, setMin] = useState(undefined)
+    const [max, setMax] = useState(undefined)
 
-    console.log(location)
+
+    const {data, loading, error, refetch} = useFetch(`hotels?city=${destination}&min=${min || 0}&max=${max || 10000}`)
+
+    const handleClick = ()=>{
+        reFetch()
+    }
 
     return (
         <div>
@@ -40,11 +49,11 @@ const List = ()=>{
                             <div className="lOptions">
                                 <div className="optionItem">
                                     <span className="optionText" >Min price</span>
-                                    <input type="number" className="opsearch" min={0} />
+                                    <input type="number" onChange={e=>setMin(e.target.value)} className="opsearch" min={0} />
                                 </div>
                                 <div className="optionItem">
                                     <span className="optionText">Max price</span>
-                                    <input type="number" className="opsearch" min={1} />
+                                    <input type="number" onChange={e=>setMax(e.target.value)} className="opsearch" min={1} />
                                 </div>
                                 <div className="optionItem">
                                     <span className="optionText">Adults</span>
@@ -60,17 +69,15 @@ const List = ()=>{
                                 </div>
                             </div>
                         </div>
-                        <button>Search</button>
+                        <button onClick={handleClick}>Search</button>
                     </div>
                     <div className="listResult">
-                        <SearchItem/>
-                        <SearchItem/>
-                        <SearchItem/>
-                        <SearchItem/>
-                        <SearchItem/>
-                        <SearchItem/>
-                        <SearchItem/>
-                        <SearchItem/>
+                        {loading ? "loading" : <>
+                            {data.map(item=>(
+                                <SearchItem item={item} key={item._id}/>
+                            ))}
+                            
+                        </>}
                     </div>
                     
                 </div>

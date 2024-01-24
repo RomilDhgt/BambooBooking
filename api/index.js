@@ -6,8 +6,18 @@ import authRoute from "./routes/auth.js"
 import userRoute from "./routes/users.js"
 import hotelRoute from "./routes/hotels.js"
 import roomRoute from "./routes/rooms.js"
+import cors from 'cors';
 
-const app = express()
+const app = express();
+
+const corsOptions = {
+    origin: true, //included origin as true
+    credentials: true, //included credentials as true
+};
+
+app.use(cors(corsOptions));
+app.use(express.json());
+
 dotenv.config()
 
 const connect = async () =>{
