@@ -10,6 +10,8 @@ Search Hotels Page
 
 Select Rooms Page
 ![image](https://github.com/RomilDhgt/BambooBooking/assets/71194935/1166cc07-c24c-4bb4-8a59-091af99a5b84)
+![image](https://github.com/RomilDhgt/BambooBooking/assets/71194935/f1064f08-9973-4434-a00d-c428ed63339a)
+
 
 Login Page
 ![image](https://github.com/RomilDhgt/BambooBooking/assets/71194935/9ece0f32-0eea-4db2-b513-e27853ea9980)
